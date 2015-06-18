@@ -11,3 +11,8 @@ exports.answer = function(req, res){
         res.render('quizes/answer', {respuesta: 'Incorrecto'});
     }
 };
+
+//GET
+exports.author=function(req,res){
+	res.render('author',{author:'Carlos Navidad',src:'http://www.lcfc.com/images/common/bg_player_profile_default_big.png'});
+};
